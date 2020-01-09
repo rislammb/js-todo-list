@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-image: url('bg.jpg');
+  -webkit-background-size: cover;
+  background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  font-family: 'Titillium Web', sans-serif;
+}
+#main {
+  width: 95%;
+  max-width: 700px;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin-top: 10px;
+  padding: 10px;
+  box-shadow: 2px 2px 7px rgb(209, 209, 209);
+  border-radius: 5px;
+}
+.small-bottom-margin {
+  margin-bottom: 10px;
+}
+#header {
+  text-align: center;
+  color: rgb(148, 11, 107);
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: 'Titillium Web', sans-serif;
+}
+#search-input {
+  margin-bottom: 15px;
+}
+#new-todo-input {
+  width: calc(100% - 80px);
+  position: relative;
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.7);
+  font-family: 'Titillium Web', sans-serif;
+}
+#submit-new-todo-btn {
+  float: right;
+  width: 75px;
+}
+#todo-list-container {
+  overflow-y: auto;
+  font-family: 'Titillium Web', sans-serif;
+  min-height: 70vh;
+}
+#todo-list-container li {
+  cursor: pointer;
+  background-color: #fff;
+}
+#todo-list-container li:hover {
+  background-color: rgb(194, 194, 194);
+}
+
+@media screen and (min-width: 600px) {
+  #header {
+    font-size: 2.5rem;
+  }
+}
